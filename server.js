@@ -10,7 +10,9 @@ const reviewRoutes =  require("./routes/reviewRoute")
 const app = express();
 
 // Middleware
-app.use(cors());
+app.use(cors({
+    origin: 'https://illustrious-crepe-280ac5.netlify.app'
+}));
 app.use(express.json());
 
 // Connect to MongoDB
